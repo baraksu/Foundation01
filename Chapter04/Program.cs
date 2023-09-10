@@ -27,7 +27,7 @@ namespace Chapter04
             // casting int double /////////
             int count = 1;
             double max = count;
-
+            max = 1.2;
             count = (int)max;
 
 
