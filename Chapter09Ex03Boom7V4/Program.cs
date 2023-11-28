@@ -27,7 +27,7 @@ namespace Chapter09Ex03Boom7V4
                 }
 
                 Console.WriteLine($"There are {count} Boom numbers");
-                n % i ==0
+                
             }
         }
     }
