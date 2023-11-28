@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -62,6 +63,8 @@ namespace Chapter05
             double round = Math.Round(9.99); // עיגול למספר הקרוב
             double floor = Math.Floor(9.99);// למספר העגול הנמוך
             double ceiling = Math.Ceiling(10.01);// למספר העגול הגבוהה
+
+            Console.WriteLine();
 
 
 
