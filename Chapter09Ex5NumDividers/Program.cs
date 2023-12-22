@@ -16,7 +16,7 @@ namespace Chapter09Ex5NumDividers
             Console.WriteLine("num = "+ num);
             Console.WriteLine("The dividers are:");
 
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i <= num; i++)
             {
                 if (num % i == 0)
                 {
