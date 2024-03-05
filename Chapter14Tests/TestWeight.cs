@@ -7,6 +7,7 @@ using Xunit.Abstractions;
 
 namespace TestProject01
 {
+    
     public class TestWeight
     {
         private readonly ITestOutputHelper _output;
@@ -37,5 +38,15 @@ namespace TestProject01
 
 
         }
+
+        [Fact]
+        public void EqualWeit_LessReturnFalse()
+        {
+            Weight weight1 = new Weight(2150);
+            Weight weight2 = new Weight(2150);
+
+
+            Assert.False(weight1.Less(weight2));
+        } 
     }
 }

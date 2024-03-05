@@ -11,7 +11,9 @@ namespace Chapter14
     {
         #region Fields
 
+        
         private int _radius;
+
         private string _color;
 
         #endregion
@@ -36,9 +38,12 @@ namespace Chapter14
         }
         public void SetColor(string color)
         {
-
             this._color = color;
         }
+
+        
+        
+
 
         #endregion
 
@@ -50,14 +55,9 @@ namespace Chapter14
         }
         public Circle(int radius, string color)
         {
-            //_radius = radius;
-            //_color = color;
-
-            SetRadius(radius);
-            SetColor(color);
-
-
-
+            this._radius = radius;
+            this._color = color;
+            
         }
 
         #endregion
