@@ -9,39 +9,41 @@ namespace Chapter14
 {
     public class Circle
     {
-        // please add comment
+        #region Fields
+
         private int _radius;
-
-      
-
-      
-        public int Radius
-        {
-            get { return _radius; }
-            set
-            {
-                if (value > 0)
-                {
-                    _radius = value;
-                }
-            }
-        }
-
         private string _color;
 
-        public string Color
-        {
-            get { return _color; }
-            set { _color = value; }
-        }
+        #endregion
+
+        #region Accessors
+
         public int GetRadius()
         {
-            return _radius;
+
+            return this._radius;
         }
         public void SetRadius(int radius)
         {
+
             this._radius = radius;
         }
+
+        public string GetColor()
+        {
+
+            return this._color;
+        }
+        public void SetColor(string color)
+        {
+
+            this._color = color;
+        }
+
+        #endregion
+
+        #region Constractors
+
         public Circle()
         {
 
@@ -51,33 +53,35 @@ namespace Chapter14
             //_radius = radius;
             //_color = color;
 
-            Radius = radius;
-            Color = color;
+            SetRadius(radius);
+            SetColor(color);
 
-            this.Radius = radius;
-            this._radius = radius;
 
 
         }
-            public double GetArea()
-            {
-                return Math.PI * Math.Pow(Radius, 2);
 
-            }
+        #endregion
+
+        #region Methods
+
+        public double GetArea()
+        {
+            return Math.PI * Math.Pow(GetRadius(), 2);
+
+        }
         public static double GetPI()
         {
             return Math.PI;
 
         }
-        public void ToString()
+
+
+        public override string ToString()
         {
-            Console.WriteLine(Radius);
-            Console.WriteLine(Color);
+            return $"Radius:{GetRadius()}, Color{GetColor()}";
         }
 
-
-
-
+        #endregion
     }
 }
 
